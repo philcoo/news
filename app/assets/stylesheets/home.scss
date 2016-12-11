@@ -10,13 +10,16 @@
 	margin-bottom: 5em;
 }
 .container{
-	margin-top: 2em;
 	text-align: center;
+
 	
 }
 .main{
 	text-align: center;
 	margin-top: 5em;
+	margin-left: 45px;
+	margin-right: 45px;
+
 
 	border: 15px, 15px;
 }
@@ -24,4 +27,9 @@
 	text-align: center;	
 	margin-top: 5em;
 	padding-bottom: 25px;
+}
+.main .field{
+	font-size: 2em;
+	color: green;
+	font-family: impact;
 }

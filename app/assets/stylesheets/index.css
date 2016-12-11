@@ -1,0 +1,58 @@
+.title{
+	margin-top: -5px;
+	background-image: url(back1.jpg);
+	padding-top: 10px;	
+}
+.title h1{
+	text-align: center;
+	padding-bottom: 25px;
+	padding-top: -20px;
+
+}
+h1{
+	text-align: center;
+
+}
+h3{
+	color: orange;
+}
+.title{
+	margin-top: -5px;
+	background-image: url(back1.jpg);
+	padding-top: 10px;	
+}
+.title h1{
+	text-align: center;
+	padding-bottom: 25px;
+	padding-top: -20px;
+
+}
+h1{
+	text-align: center;
+
+}
+h3{
+	color: orange;
+}
+.subtitle{
+	text-align: center;
+	font-size: 1.5em;
+}
+.marticle{
+	margin-top: 35px;
+	text-align: center;
+}
+.marticle{
+	font-size: 20px;
+
+}
+
+
+.wrp2{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	
+}
+
