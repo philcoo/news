@@ -1,3 +1,4 @@
+<div  class="loginpage">
 <div class="container">
  <h1>TheNEWS@CHURCH</h1><br>
 <h2 >Log in</h2>
@@ -5,17 +6,19 @@
 </div>
 
 
-<div class="main">
+<div id="sinin">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
-   <div class="email">
+  <div class="email">
+   
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
+    </div>
     
   </div>
 
   <div class="field" >
-    <div class="pass">
+    <div class="">
     <%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "off" %>
     </div>
@@ -28,6 +31,7 @@
     </div>
   <% end -%>
   </div>
+  </div>  
   
   <div class="footer">
 
@@ -44,6 +48,30 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+</div>
+</div>
+
+<div class="video">
+<%= video_tag(["worship.mp4"], :size => "400x240", :autoplay => true, :loop => true) %>
+</div>
+
+<div class="intro">
+<h4 style="color:orange;">OUR PURPOSE </h4>
+<p>is to make sure our brothers and sisters not miss much. in church<br> News@church is a place where 
+christian share notes they took during church services<br>
+and share words of encouragement, to support their brothers and siters in the Lord.</p>
+</div>
+
+<div id="word">
+
+<aside class="aside">
+<h2>Word of GOD<br> is strong than anything.</h2>
+<h3> is powerfull than <br>two egde swords</h3>
+</aside>
+
+
+
 </div>
 
 
