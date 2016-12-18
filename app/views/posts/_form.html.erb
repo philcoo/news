@@ -1,27 +1,42 @@
+
+
 <%= form_for(post) do |f| %>
-  <% if post.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+<% if post.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
 
-      <ul>
-      <% post.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </div>
-
-  <div class="field">
-    <%= f.label :content %>
-    <%= f.text_area :content %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <ul>
+    <% post.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
 <% end %>
+
+<div class="field" style="font-size:15px;">
+  <div class="row">
+    <div class=" col s7">
+      <div class="container">
+
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+      </div><br />
+
+      <div class="field">
+        <div  class="col-xs-12 col-sm-4">
+          <%= f.label :content %>
+          <%= f.text_area :content %>
+          <div class="actions">
+            <%= f.submit %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<% end %>
+
+

@@ -1,78 +1,77 @@
-<div  class="loginpage">
-<div class="container">
- <h1>TheNEWS@CHURCH</h1><br>
-<h2 >Log in</h2>
- <%= image_tag("logo.jpg", :width => 200, :height => 100,)  %>
-</div>
 
+  <div id="log">
+    <h1>TheNEWS@CHURCH</h1><br>
+    <div id="img1">
+    <%= image_tag("logo.jpg", :width => 350, :height => 400,)  %>
+    </div>
 
+    <div class="row">
+      <div class="col s7 push-s5">
+      <%= video_tag(["worship.mp4"], :size => "400x840", :autoplay => true, :loop => true) %>
+
+     
+
+      </div>
+
+      <div class="col s4 pull-s6">
 <div id="sinin">
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-  <div class="email">
-   
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+<div class="container">
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="field" style="color:white;>
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true %>
     </div>
-    
-  </div>
-
-  <div class="field" >
-    <div class="">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+    <div class="field" style="color:white;" > 
+      <%= f.label :password %><br />
+      <%= f.password_field :password, autocomplete: "off" %>
     </div>
-  </div>
 
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
+    <% if devise_mapping.rememberable? -%>
+    <div class="field1">
       <%= f.check_box :remember_me %>
+
       <%= f.label :remember_me %>
+
     </div>
-  <% end -%>
+    <button type="button" class="btn btn-primary" style="color:green;"><%= f.submit "Log in" %>
+    </button>
+
+
+    <% end -%>
+
+          
+
+ 
+  <% end %>
+  <div class="sharelink">
+    <%= render "devise/shared/links" %>
+
   </div>
-  </div>  
-  
-  <div class="footer">
-
-  <div class="actions">
-  
-  <button type="button" class="btn btn-primary" style="color:green;"><%= f.submit "Log in" %>
-    
-  </button>
+   <div class="intro">
+  <h4 style="color:orange;">OUR PURPOSE </h4>
+  <p>is to make sure our brothers and sisters not miss much. in church<br> News@church is a place where 
+    christian share notes they took during church services<br>
+    and share words of encouragement, to support their brothers and siters in the Lord.</p>
   </div>
+  </div>
+        </div>
 
+      </div>
+    </div>
+   
+  <div class="video">
   
-  
-  
-<% end %>
-
-<%= render "devise/shared/links" %>
-
-</div>
-</div>
-
-<div class="video">
-<%= video_tag(["worship.mp4"], :size => "400x240", :autoplay => true, :loop => true) %>
-</div>
-
-<div class="intro">
-<h4 style="color:orange;">OUR PURPOSE </h4>
-<p>is to make sure our brothers and sisters not miss much. in church<br> News@church is a place where 
-christian share notes they took during church services<br>
-and share words of encouragement, to support their brothers and siters in the Lord.</p>
-</div>
-
-<div id="word">
-
-<aside class="aside">
-<h2>Word of GOD<br> is strong than anything.</h2>
-<h3> is powerfull than <br>two egde swords</h3>
-</aside>
+</div>  
 
 
 
-</div>
+
+
+
+
+
+
+
 
 
 
