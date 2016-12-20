@@ -26,8 +26,10 @@
   <%= current_user.name %>
 
 
-<button class="waves-effect btn">
+<button class="waves-effect btn" style="background-color:#d7ccc8;">
+<div id="signout">
    <%= link_to "Sign_out", destroy_user_session_path, :method => 'delete' %>
+   </div>
   </button> 
   
    <br>

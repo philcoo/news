@@ -13,18 +13,33 @@
 </div>
 <% end %>
 
+ <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+        
+        <%= f.text_field :title %>
+          <label for="first_name">TITLE</label>
+        </div>
+      </div>
+
+
+
+
+
+
+
 <div class="field" style="font-size:15px;">
   <div class="row">
     <div class=" col s7">
       <div class="container">
 
-        <%= f.label :title %>
-        <%= f.text_field :title %>
+       
       </div><br />
 
       <div class="field">
         <div  class="col-xs-12 col-sm-4">
-          <%= f.label :content %>
+          <label for="first_name">Message</label>
           <%= f.text_area :content %>
           <div class="actions">
             <%= f.submit %>

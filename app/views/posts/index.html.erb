@@ -1,30 +1,188 @@
+<div class="fullpage">
 
-<p id="notice"><%= notice %></p>
+  <div class="">
+<div class="row"> 
+<!-- the message of sunday -->
 
-<h1>Posts</h1>
+      <div class="col s12" style="text-align:center;font-family:Trebuchet"><h1>SUNDAY SERVICE</h1>
+      </div>
+      <div class="col s6"><h3 style="text-align:center;font-family:impact">THE MESSAGE</h3><br><p style="font-size:20px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
+      Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Content</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 f 
 
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= post.content %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 
-<br>
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
 
-<%= link_to 'New Post', new_post_path %>
+</div>
+
+<!--  the key message -->
+
+
+      <div class="col s4">
+      <h3>  KEY OF THE MESSAGE</h3>
+      <div id="keyms">
+      <li ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'secimen book</li><br>
+
+      <li>c typesetting, remaining essentially unchanged.versions of 
+      Where does it come from?</li><br>
+        <li>c typesetting, remaining essentially unchanged.versions of 
+      Where does it come from?</li><br>
+      ere does it come from?</li><br>
+        <li>c typesetting, remaining essentially unchanged.versions of 
+      Where does it come from?</li><br>
+      </div>
+      <br>
+        <div class="row">
+        <div class="col s12 m9">
+          <div class="card">
+            <div class="card-image">
+             <%= image_tag("prayer1.jpg", :width => 10, :height => 250,)  %>
+              <span class="card-title">NEED A PRAYER</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="/index">This is a link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+        <div class="col s12 m8">
+          <div class="card">
+            <div class="card-image">
+             <%= image_tag("activeoutside.jpg", :width => 10, :height => 250,)  %>
+              <span class="card-title">OUT SIDE ACTIVITIES</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="/index">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>  
+      </div>  
+</div>
+    </div>
+
+
+<!--     user interac part of page. -->
+
+
+<hr width="75%"; color=" orange";>
+
+<div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+             <%= image_tag("jesussaves.jpg", :width => 10, :height => 450,)  %>
+              <span class="card-title">Saturday services</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="/index">This is a link</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+             <%= image_tag("fun.jpg", :width => 10, :height => 450,)  %>
+              <span class="card-title">FUN NIGHT</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="/index">This is a link</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+             <%= image_tag("activeoutside.jpg", :width => 10, :height => 450,)  %>
+              <span class="card-title">OUT SIDE ACTIVITIES</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+            
+              <a href="/index">This is a link</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+            
+      </div>
+
+              
+      </div>
+      <hr width="75%" color=" orange";>
+
+    <!--   post and create new post here. -->
+
+<div class="col s12 m7">
+    <div class="postpg">
+      <p id="notice"><%= notice %></p>
+      <div id="encourag">
+      <h4>Words of encourage</h4>
+
+      <table>
+        <thead>
+          <tr>
+           <div class="row">
+           <div class="container">
+      <div class="col s7">
+            <th style="font-size:35px;color:orange;font-family:impact;">Title</th>
+            </div>
+             <div class="col s5">
+            <th style="font-size:45px; color:orange;font-family:impact;padding-left:50px;">Content</th>
+            </div>
+ 
+            <th colspan="3"></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @posts.each do |post| %>
+          <tr>
+            <td class="title"><%= post.title %></td><br/>
+
+            <td class="content"><br /><%= post.content %></td><br>
+            <td></td></td>
+            </td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+
+      <br>
+      </div>
+
+      <%= link_to 'New Post', new_post_path %>
+    </div>
+  </div>   
+  </div>
+</div>
+
+
+
