@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Events</h1>
+div class="row">
+      <div class="grid-example col s12">
+        <table>
+  <thead>
+     <div class="col s12 m4 l2"><p>
+    <tr>
+      <th>Suject</th>
+      <th>Description</th>
+  
+
+      <th colspan="8"></th>
+    </tr>
+  </thead>
+  </p>
+  </div>
+
+  <tbody>
+    <% @events.each do |event| %>
+      <tr>
+        <td><%= event.suject %></td>
+        <td><%= event.description %></td>
+        <td><%= link_to 'Show', event %></td>
+
+      <!--   authorization -->
+
+         <% if event.user == current_user %>
+        <td><%= link_to 'Edit', edit_event_path(event) %></td>
+        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+      </div>
+      <div class="grid-example col s12 m6"><span class="flow-text">I am full-width on mobile (col s12 m6)</span></div>
+    </div>
+          
+
+
+
+
+<%= link_to 'New Event', new_event_path %>
+
+<%= link_to 'Home', posts_path %>
