@@ -8,6 +8,9 @@ Bundler.require(*Rails.groups)
 
 module News
   class Application < Rails::Application
+  	 config.assets.precompile += [
+ 'hella-tite.css'
+ ]
   	
   	config.assets.initialize_on_precompile = false 
     # Settings in config/environments/* take precedence over those specified here.
